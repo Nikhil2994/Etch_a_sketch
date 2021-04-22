@@ -61,3 +61,14 @@ function blackColorInk(){
 }
 
 ////////
+
+
+clearButton.addEventListener('click', clearCanvas);
+
+function clearCanvas(){
+
+    let colorss = document.querySelectorAll('.grid-item');
+
+    colorss.forEach(onegrid => onegrid.style.removeProperty('background-color'));
+    
+}
